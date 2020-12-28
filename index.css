@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+}
+
+main img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+#section1 {
+    background-image: url(images/starry_sky.svg);
+    background-size: contain;
+}
+
+/*menu*/
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.topnav a:hover {
+    background-color: white;
+}
+
+.topnav #myLinks {
+    display: none;
+    background-color: #f1f1f1;
+    font-family: 'roboto';
+    text-align: center;
+    padding: 4vw;
+}
+
+.topnav a {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    padding: 3vw;
+}
+
+a.active {
+    padding: 0;
+    margin: 1vw;
+}
+
+/*burgermenu*/
+.container {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 3px;
+    top: 0;
+    margin: 1vw;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*tekst*/
+h1 {
+    font-family: 'BalboaPlus Primary';
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 0;
+    color: white;
+    padding: 17vw;
+    padding-bottom: 0;
+    margin-top: 0;
+    padding-top: 9vw;
+}
+
+h2,
+p {
+    font-family: 'roboto';
+    text-align: center;
+    font-size: .8rem;
+    color: white;
+    padding-bottom: 2vw;
+}
+
+h3 {
+    font-family: 'roboto';
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*scroll funktion*/
+.image_container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image_container figure {
+    flex-grow: 1;
+}
+
+.image_container {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.image_container figure {
+    flex-basis: 90%;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+}
+
+.image_container img {
+    margin-right: 20px;
+}
