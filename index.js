@@ -36,7 +36,7 @@ let observer = new IntersectionObserver(callback);
 observer.observe(target);
 
 
-//stuff
+//burgermenu
 function myFunction(x) {
     x.classList.toggle("change");
 

@@ -191,7 +191,8 @@
         position: absolute;
         right: 3px;
         top: 0;
-        margin: 1vw;
+        margin: 3vw;
+        margin-right: 1vw;
     }
 
     .bar1,

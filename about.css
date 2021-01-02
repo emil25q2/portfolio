@@ -1,4 +1,7 @@
 @media (min-width: 800px) {
+    main {
+        margin: 6vw;
+    }
 
     /*nav*/
     #logo_container {
@@ -126,12 +129,19 @@
     }
 
     /*tekst*/
+    h1 {
+        color: black;
+        font-family: 'roboto';
+        font-weight: normal;
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+
     p {
         font-size: .8rem;
         text-transform: uppercase;
-        text-align: center;
+        text-align: justify;
         font-family: 'roboto';
-        margin: 2vw;
     }
 }
 
@@ -154,6 +164,7 @@
 
     main {
         background-image: url(images/stjernehimmel.svg);
+        overflow: hidden;
     }
 
     /*menu*/
@@ -195,7 +206,8 @@
         position: absolute;
         right: 3px;
         top: 0;
-        margin: 1vw;
+        margin: 3vw;
+        margin-right: 1vw;
     }
 
     .bar1,
@@ -232,16 +244,21 @@
         text-transform: uppercase;
         font-family: 'roboto';
         font-weight: normal;
+        font-size: 2rem;
         padding-left: 4vw;
         margin: 0;
         padding-top: 4vw;
     }
 
-    p {
+    section p {
         background-color: white;
         padding: 24px;
         margin: 20px;
+        margin-bottom: 40px;
         text-align: justify;
+        opacity: .9;
+
+        font-family: 'roboto';
     }
 
     footer p {
@@ -257,7 +274,8 @@
     }
 
     /*cv knap*/
-    #main_me .b1label {
+    .b1label {
+        /*
         background-color: white;
         border-style: solid;
         border-width: 15px;
@@ -265,14 +283,39 @@
         border-right-width: 20px;
         border-color: white;
         color: #999;
+
+        font-family: 'roboto';
+        text-decoration: none;
+*/
+
+        color: white;
+        border: 2px solid white;
+        padding: 4vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        margin: 20px;
+
+        font-family: 'roboto';
     }
 
-    #main_me .b1label:hover {
+    .b1label:hover {
+        /*
         background-color: #555;
         border-style: solid;
         border-width: 15px;
         border-left-width: 20px;
         border-right-width: 20px;
         border-color: #555;
+*/
+
+        background-color: grey;
+        border-style: solid;
+    }
+
+    main img {
+        margin: 17px;
+        margin-top: 40px;
+        width: 90%;
+        height: auto;
     }
 }

@@ -587,7 +587,8 @@
 
     #section1 {
         background-image: url(images/starry_sky.svg);
-        background-size: contain;
+        background-size: cover;
+        height: 158vw;
     }
 
     span {
@@ -633,7 +634,8 @@
         position: absolute;
         right: 3px;
         top: 0;
-        margin: 1vw;
+        margin: 3vw;
+        margin-right: 1vw;
     }
 
     .bar1,
@@ -667,10 +669,8 @@
         text-align: center;
         margin-bottom: 0;
         color: white;
-        padding: 17vw;
-        padding-bottom: 0;
         margin-top: 0;
-        padding-top: 9vw;
+        padding-top: 60vw;
     }
 
     h2 {
@@ -684,9 +684,12 @@
 
     h3 {
         font-family: 'roboto';
+        font-size: 2rem;
         text-transform: uppercase;
         text-align: center;
         font-weight: normal;
+        margin: 9vw;
+        margin-bottom: 2vw;
     }
 
     p {
