@@ -4,19 +4,36 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DS Graphic Design</title>
+    <title>EdS portfolio</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://use.typekit.net/bxy2eji.css">
+
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <div class="topnav">
-            <a href="#index.html" class="active"><img id="logo" src="images/logo_small.png" alt="logo" width="54.4" height="34.7"></a>
+        <nav class="topnav">
+            <section id="logo_container">
+                <a href="index.html" class="active"><img id="logo" src="images/small_logo.svg" alt="logo" width="54.4" height="54.4"></a>
+            </section>
+
             <div id="myLinks">
-                <a href="#index.html">forside</a>
-                <a href="#projekter.html">projekter</a>
-                <a href="#about.html">om mig</a>
+                <a href="index.html">forside</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">projekter</button>
+                    <div class="dropdown-content">
+                        <a href="tema_2.html" target="blank">tema 02 - web</a>
+                        <a href="tema_3.html">tema 03 - ux</a>
+                        <a href="tema_4.html">tema 04 - animation</a>
+                        <a href="tema_5.html">tema 05 - indhold</a>
+                    </div>
+                </div>
+
+                <a href="projekter.html" class="projekter">projekter</a>
+
+                <a href="about.html">om mig</a>
             </div>
 
             <div class="container" onclick="myFunction(this)">
@@ -24,44 +41,102 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
-        </div>
+        </nav>
     </header>
 
     <main>
         <section id="section1">
-            <h1>udforsk mit universe</h1>
+            <h1>udforsk mit univers</h1>
 
             <h2>portofolio af <br>Emilie da Silva</h2>
 
             <div class="scroll_down"></div>
+
+            <div id="container">
+                <div id="shape"></div>
+            </div>
+
+            <div id="container1">
+                <div id="shape1"></div>
+            </div>
+
+            <div id="container2">
+                <div id="shape2"></div>
+            </div>
+
+            <div id="container3">
+                <div id="shape3"></div>
+            </div>
+
+            <div id="astronaut_container">
+                <div id="astronaut_sprite"></div>
+            </div>
+
+            <div id="saturn_container">
+                <div id="saturn_sprite"></div>
+            </div>
+
+            <div id="stars_container">
+                <div id="stars_sprite"></div>
+            </div>
+
+            <div id="stars_container1">
+                <div id="stars_sprite1"></div>
+            </div>
+
+            <div id="stars_container2">
+                <div id="stars_sprite2"></div>
+            </div>
+
+            <div id="stars_container3">
+                <div id="stars_sprite3"></div>
+            </div>
+
+            <div id="moon_container">
+                <div id="moon_sprite"></div>
+            </div>
         </section>
 
         <section id="section2">
             <h3>projekter</h3>
 
             <div class="image_container">
-                <figure>
-                    <img src="images/moon.svg" width="205" height="205" alt="">
-                </figure>
+                <div class="img_container">
+                    <img src="images/tema2.png" width="710" height="532.5" alt="" target="blank">
+                    <a href="tema_2.html">
+                        <div class="overlay">
+                            <div class="text">tema 02 - web</div>
+                        </div>
+                    </a>
+                </div>
 
-                <figure>
-                    <img src="images/saturn.svg" width="205" height="205" alt="">
-                </figure>
+                <div class="img_container">
+                    <img src="images/tema3.jpg" width="710" height="532.5" alt="">
+                    <div class="overlay">
+                        <div class="text">tema 03 - ux</div>
+                    </div>
+                </div>
 
-                <figure>
-                    <img src="images/astronaut.svg" width="205" height="205" alt="">
-                </figure>
+                <div class="img_container">
+                    <img src="images/game.png" width="710" height="532.5" alt="">
+                    <div class="overlay">
+                        <div class="text">tema 04 - animation</div>
+                    </div>
+                </div>
 
-                <figure>
-                    <img src="images/starry_sky.svg" width="205" height="205" alt="">
-                </figure>
+                <div class="img_container">
+                    <img src="images/redesign_screens.jpg" width="710" height="532.5" alt="">
+                    <div class="overlay">
+                        <div class="text">tema 05 - indhold</div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="scroll_up">
-            <a href="#"><span class="arrow">↑</span></a>
+            <button class="scrollToTopBtn">↑</button>
         </div>
         <p>all rights reserved. Emilie da Silva 2020</p>
     </footer>
