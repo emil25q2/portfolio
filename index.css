@@ -2,7 +2,7 @@
 
     /*nav*/
     #logo_container {
-        margin-left: 2vw;
+        margin-left: 1.2vw;
     }
 
     #logo {
@@ -21,7 +21,7 @@
     .dropbtn {
         background-color: white;
         display: flex;
-        justify-content: end;
+        justify-content: center;
         position: sticky;
         font-family: 'Roboto';
         text-transform: uppercase;
@@ -126,7 +126,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        height: 100%;
+        height: 99%;
         width: 100%;
         opacity: 0;
         transition: .5s ease;
@@ -534,6 +534,19 @@
         top: -76vw;
         z-index: 1;
     }
+
+    /*hide knapper*/
+    .previous {
+        display: none;
+    }
+
+    .next {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
 }
 
 
@@ -582,7 +595,7 @@
     main img {
         width: 100%;
         vertical-align: middle;
-        height: 94%;
+        height: 100%;
     }
 
     #section1 {
@@ -622,7 +635,7 @@
         padding: 5vw;
     }
 
-    a.active {
+    a.logo {
         padding: 0;
         margin: 1vw;
     }
@@ -646,6 +659,7 @@
         background-color: black;
         margin: 6px 0;
         transition: 0.4s;
+        border-radius: 10px;
     }
 
     .change .bar1 {
@@ -660,6 +674,66 @@
     .change .bar3 {
         transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    /*drop down menu*/
+    .dropbtn {
+        border: none;
+        font-family: 'roboto';
+
+        font-size: 17px;
+        display: block;
+        padding: 5vw;
+        text-transform: uppercase;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        /*
+        position: absolute;
+        background-color: white;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+*/
+        display: none;
+        background-color: white;
+        padding-left: 26.5vw;
+        padding-right: 26.5vw;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 4vw;
+        text-decoration: none;
+        display: block;
+        font-family: 'roboto';
+        font-size: .9rem;
+    }
+
+    .dropdown-content a:hover {
+        /*
+        background-color: #f1f1f1;
+        color: black;
+*/
+
+        border-bottom: solid gray 3px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        /*
+        color: grey;
+        border-bottom: solid grey 3px;
+*/
+        padding-left: 37vw;
     }
 
     /*tekst*/
@@ -712,6 +786,7 @@
     .image_container {
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
+        overflow-y: hidden;
     }
 
     .img_container {
@@ -720,15 +795,117 @@
         scroll-snap-align: center;
     }
 
+    /*
     .img_container .text {
         display: none;
     }
+*/
 
     .scrollToTopBtn {
         display: none;
     }
 
-    .dropdown {
+    /*frem og tilbage knapper*/
+    #frem_tilbage a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+    }
+
+    .round:hover {
+        color: grey;
+        border: 2px solid grey;
+    }
+
+    .previous {
+        color: white;
+        border: 2px solid white;
+        top: 227vw;
+        left: 82vw;
+        top: 232vw;
+        left: 2vw;
+    }
+
+    .next {
+        color: white;
+        border: 2px solid white;
+        top: 227vw;
+        left: 82vw;
+        top: 232vw;
+        left: 88vw;
+    }
+
+    .round {
+        border-radius: 50%;
+        position: absolute;
+        z-index: 1;
+    }
+
+    /*
+    overlay .overlay {
+        position: absolute;
+        top: 197vw;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 34.2%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: black;
+        cursor: pointer;
+    }
+
+    .img_container:hover .overlay {
+        opacity: .9;
+    }
+
+    .text {
+        color: white;
+        font-size: 4.5vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: 'roboto';
+        text-transform: uppercase;
+    }
+*/
+
+    .button_container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .button_container .btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: white;
+        color: grey;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        border: 2px solid grey;
+        text-transform: uppercase;
+        border-radius: 4px;
+        opacity: 0.9;
+    }
+
+    .button_container .btn:hover {
+        color: white;
+        border: 2px solid white;
+        background: gray;
+    }
+
+    /*    hide*/
+    .text {
         display: none;
     }
 }

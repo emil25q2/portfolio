@@ -2,7 +2,7 @@
 
     /*nav*/
     #logo_container {
-        margin-left: 2vw;
+        margin-left: 1.2vw;
     }
 
     #logo {
@@ -21,7 +21,7 @@
     .dropbtn {
         background-color: white;
         display: flex;
-        justify-content: end;
+        justify-content: center;
         position: sticky;
         font-family: 'Roboto';
         text-transform: uppercase;
@@ -183,7 +183,7 @@
         padding: 5vw;
     }
 
-    a.active {
+    a.logo {
         padding: 0;
         margin: 1vw;
     }
@@ -207,6 +207,7 @@
         background-color: black;
         margin: 6px 0;
         transition: 0.4s;
+        border-radius: 10px;
     }
 
     .change .bar1 {
@@ -225,6 +226,66 @@
 
     .dropdown {
         display: none;
+    }
+
+    /*drop down menu*/
+    .dropbtn {
+        border: none;
+        font-family: 'roboto';
+
+        font-size: 17px;
+        display: block;
+        padding: 5vw;
+        text-transform: uppercase;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        /*
+        position: absolute;
+        background-color: white;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+*/
+        display: none;
+        background-color: white;
+        padding-left: 26.5vw;
+        padding-right: 26.5vw;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 4vw;
+        text-decoration: none;
+        display: block;
+        font-family: 'roboto';
+        font-size: .9rem;
+    }
+
+    .dropdown-content a:hover {
+        /*
+        background-color: #f1f1f1;
+        color: black;
+*/
+
+        border-bottom: solid gray 3px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        /*
+        color: grey;
+        border-bottom: solid grey 3px;
+*/
+        padding-left: 37vw;
     }
 
     /*tekst*/

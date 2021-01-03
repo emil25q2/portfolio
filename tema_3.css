@@ -2,7 +2,7 @@
 
     /*nav*/
     #logo_container {
-        margin-left: 2vw;
+        margin-left: 1.2vw;
     }
 
     #logo {
@@ -21,7 +21,7 @@
     .dropbtn {
         background-color: white;
         display: flex;
-        justify-content: end;
+        justify-content: center;
         position: sticky;
         font-family: 'Roboto';
         text-transform: uppercase;
@@ -152,6 +152,17 @@
         margin: 0;
     }
 
+
+    main {
+        background-image: url(images/stars.svg);
+        background-size: contain;
+    }
+
+
+    section {
+        overflow: hidden;
+    }
+
     /*menu*/
     .topnav {
         overflow: hidden;
@@ -179,7 +190,7 @@
         padding: 5vw;
     }
 
-    a.active {
+    a.logo {
         padding: 0;
         margin: 1vw;
     }
@@ -203,6 +214,7 @@
         background-color: black;
         margin: 6px 0;
         transition: 0.4s;
+        border-radius: 10px;
     }
 
     .change .bar1 {
@@ -219,20 +231,328 @@
         transform: rotate(45deg) translate(-8px, -8px);
     }
 
+    /*drop down menu*/
+    .dropbtn {
+        border: none;
+        font-family: 'roboto';
+
+        font-size: 17px;
+        display: block;
+        padding: 5vw;
+        text-transform: uppercase;
+    }
+
     .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        /*
+        position: absolute;
+        background-color: white;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+*/
+        display: none;
+        background-color: white;
+        padding-left: 28.5vw;
+        padding-right: 28.5vw;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 4vw;
+        text-decoration: none;
+        display: block;
+        font-family: 'roboto';
+        font-size: .9rem;
+    }
+
+    .dropdown-content a:hover {
+        /*
+        background-color: #f1f1f1;
+        color: black;
+*/
+
+        border-bottom: solid gray 3px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        /*
+        color: grey;
+        border-bottom: solid grey 3px;
+*/
+        padding-left: 39vw;
+    }
+
+    /*scroll knap*/
+    /*
+    .scrollToTopBtn {
+        display: none;
+    }
+*/
+    .scrollToTopBtn {
+        background-color: black;
+        border: none;
+        border-radius: 50%;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 48px;
+        width: 48px;
+
+        /* place it at the bottom right corner */
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        /* keep it at the top of everything else */
+        z-index: 100;
+        /* hide with opacity */
+        opacity: 0;
+        /* also add a translate effect */
+        transform: translateY(100px);
+        /* and a transition */
+        transition: all .5s ease
+    }
+
+    .showBtn {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    /*scroll funktion*/
+    .image_container {
+        display: flex;
+        /*        gap: 20px;*/
+    }
+
+    .image_container img_container {
+        flex-grow: 1;
+    }
+
+    .image_container {
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
+    .img_container {
+        flex-basis: 100%;
+        flex-shrink: 0;
+        scroll-snap-align: center;
+    }
+
+    .img_container .text {
         display: none;
     }
 
+    .image_container figcaption {
+        padding: 10px;
+        text-align: center;
+        font-family: 'roboto';
+        font-size: 1.3rem;
+        color: white;
+        text-transform: uppercase;
+    }
+
     /*tekst*/
+    h1 {
+        font-size: 3rem;
+        font-family: 'roboto';
+        text-transform: uppercase;
+        font-weight: normal;
+        text-align: center;
+        color: black;
+        margin: 15px;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        color: white;
+        font-family: 'roboto';
+        font-weight: normal;
+        text-align: center;
+        margin-top: 0;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    section p {
+        font-size: .9rem;
+        text-align: justify;
+        font-family: 'roboto';
+        color: black;
+    }
+
     p {
+        font-size: .9rem;
+        text-align: justify;
+        font-family: 'roboto';
+        margin: 30px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: black;
+
+        background-color: white;
+        border-radius: 4px;
+        opacity: .9;
+    }
+
+    .link {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    #link {
+        color: black;
+        text-decoration: none;
+    }
+
+    .footer_text p {
         font-size: .7rem;
         text-transform: uppercase;
         text-align: center;
         font-family: 'roboto';
+        color: black;
     }
 
-    /*scroll knap*/
-    .scrollToTopBtn {
-        display: none;
+    #sketch {
+        color: white;
+    }
+
+    /*sorte klatter*/
+    :root {
+        --background: black;
+        --primary: black;
+        --secondary: black;
+        --third: black;
+    }
+
+    #container3 {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 33vw;
+        left: 55vw;
+        z-index: -1;
+    }
+
+    #shape3 {
+        animation: morph 8s ease-in-out infinite;
+        /*        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;*/
+        transition: all 1s ease-in-out;
+        width: 135px;
+        height: 220px;
+        z-index: -1;
+        transform: rotate(90deg);
+    }
+
+    @keyframes morph {
+        0% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+
+        50% {
+            border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+            background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+        }
+
+        100% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+    }
+
+    /*
+    #stars_container3 {
+        position: relative;
+    }
+
+    #stars_sprite3 {
+        background-image: url(images/small_stars.svg);
+        position: relative;
+        width: 16vw;
+        height: 16vw;
+        left: -11vw;
+        top: -76vw;
+        z-index: 1;
+    }
+*/
+
+    #container4 {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 128vw;
+        left: 2vw;
+        z-index: -1;
+    }
+
+    #shape4 {
+        animation: morph 8s ease-in-out infinite;
+        /*        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;*/
+        transition: all 1s ease-in-out;
+        width: 400px;
+        height: 220px;
+        z-index: -1;
+        transform: rotate(-10deg);
+    }
+
+    @keyframes morph {
+        0% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+
+        50% {
+            border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+            background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+        }
+
+        100% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+    }
+
+    #container5 {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 353vw;
+        z-index: -1;
+    }
+
+    #shape5 {
+        animation: morph 8s ease-in-out infinite;
+        /*        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;*/
+        transition: all 1s ease-in-out;
+        width: 350px;
+        height: 500px;
+        z-index: -1;
+        transform: rotate(-10deg);
+    }
+
+    @keyframes morph {
+        0% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+
+        50% {
+            border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+            background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+        }
+
+        100% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+        }
     }
 }
