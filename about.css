@@ -1,6 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
 @media (min-width: 800px) {
-    main {
-        margin: 6vw;
+    body {
+        background-image: url(images/rocket.svg);
+        background-size: cover;
+        width: 100vw;
+        height: 56.25vw;
+        overflow: hidden;
+    }
+
+    section {
+        margin-left: 2vw;
     }
 
     /*nav*/
@@ -131,19 +143,87 @@
     /*tekst*/
     h1 {
         color: black;
-        font-family: 'roboto';
+        font-family: 'BalboaPlus Primary';
         font-weight: normal;
         text-transform: uppercase;
-        font-size: 3rem;
+        font-size: 5rem;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        font-size: 1.97rem;
+        font-family: 'roboto';
+        font-weight: normal;
+        margin-top: 0;
+        margin-bottom: 4vw;
     }
 
     p {
-        font-size: .8rem;
-        text-transform: uppercase;
-        text-align: justify;
+        font-size: 1rem;
+        /*    text-align: justify;*/
         font-family: 'roboto';
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 30px;
+        color: black;
+    }
+
+    #mig {
+        position: relative;
+    }
+
+    #mig img {
+        position: absolute;
+        top: -3vw;
+        right: 13vw;
+    }
+
+    footer p {
+        font-size: .8rem;
+        text-align: center;
+        font-family: 'roboto';
+        text-transform: uppercase;
+        padding: 0;
+        margin-top: 12vw;
+        color: gray;
+    }
+
+    #text {
+        display: grid;
+        grid-template-columns: repeat(3, 500px);
+        grid-template-rows: repeat(2, 170px);
+    }
+
+    /*cv knap*/
+    .b1label {
+        color: black;
+        border: 2px solid black;
+        padding: 2vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        margin-left: 2vw;
+        font-family: 'roboto';
+        margin-top: 15vw;
+    }
+
+    .b1label:hover {
+        background-color: #f1f1f1;
+        border: 2px solid grey;
+        color: grey;
+    }
+
+    a {
+        text-decoration: none;
     }
 }
+
+
+
+
+
+
 
 
 
@@ -303,23 +383,32 @@
     h1 {
         color: white;
         text-transform: uppercase;
-        font-family: 'roboto';
+        font-family: 'BalboaPlus Primary';
         font-weight: normal;
-        font-size: 2rem;
-        padding-left: 4vw;
+        font-size: 8rem;
         margin: 0;
-        padding-top: 4vw;
+        margin-top: 0px;
+        margin-top: 7vw;
+        text-align: center;
     }
 
-    section p {
-        background-color: white;
-        padding: 24px;
-        margin: 20px;
-        margin-bottom: 40px;
-        text-align: justify;
-        opacity: .9;
-
+    h2 {
+        font-size: 1.57rem;
+        color: white;
         font-family: 'roboto';
+        font-weight: normal;
+        margin-top: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    p {
+        padding: 15px;
+        text-align: justify;
+        color: white;
+        font-family: 'roboto';
+        padding-top: 0;
+        margin-top: 0;
     }
 
     footer p {
@@ -327,6 +416,9 @@
         text-transform: uppercase;
         text-align: center;
         font-family: 'roboto';
+        color: gray;
+        padding: 0;
+        margin: 10px;
     }
 
     /*scroll knap*/
@@ -352,11 +444,12 @@
         color: white;
         border: 2px solid white;
         padding: 4vw;
-        padding-top: 2vw;
-        padding-bottom: 2vw;
-        margin: 20px;
-
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
         font-family: 'roboto';
+        margin-left: 170px;
     }
 
     .b1label:hover {
@@ -369,8 +462,9 @@
         border-color: #555;
 */
 
-        background-color: grey;
-        border-style: solid;
+        background-color: #f1f1f1;
+        border: 1px solid grey;
+        color: grey;
     }
 
     main img {

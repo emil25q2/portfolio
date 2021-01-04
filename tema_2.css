@@ -132,6 +132,15 @@
         text-align: center;
         font-family: 'roboto';
         margin: 2vw;
+        color: grey;
+    }
+
+    footer p {
+        font-size: .8rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'roboto';
+        color: grey;
     }
 }
 
@@ -368,11 +377,11 @@
         text-decoration: none;
     }
 
-    .footer_text p {
+    footer p {
         font-size: .7rem;
         text-transform: uppercase;
         text-align: center;
         font-family: 'roboto';
-        color: black;
+        color: grey;
     }
 }

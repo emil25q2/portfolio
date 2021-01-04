@@ -1,4 +1,7 @@
 @media (min-width: 800px) {
+    main img {
+        width: 100%;
+    }
 
     /*nav*/
     #logo_container {
@@ -132,6 +135,7 @@
         text-align: center;
         font-family: 'roboto';
         margin: 2vw;
+        color: grey;
     }
 }
 
@@ -294,6 +298,7 @@
         text-transform: uppercase;
         text-align: center;
         font-family: 'roboto';
+        color: grey;
     }
 
     /*scroll knap*/

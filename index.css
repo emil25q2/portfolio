@@ -103,6 +103,7 @@
         text-align: center;
         font-family: 'roboto';
         margin: 2vw;
+        color: grey;
     }
 
     /*billeder - projekter*/
@@ -771,6 +772,7 @@
         text-transform: uppercase;
         text-align: center;
         font-family: 'roboto';
+        color: grey;
     }
 
     /*scroll funktion*/

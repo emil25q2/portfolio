@@ -133,6 +133,14 @@
         font-family: 'roboto';
         margin: 2vw;
     }
+
+    footer p {
+        font-size: .8rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'roboto';
+        color: grey;
+    }
 }
 
 
@@ -286,6 +294,14 @@
         text-transform: uppercase;
         text-align: center;
         font-family: 'roboto';
+    }
+
+    footer p {
+        font-size: .7rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'roboto';
+        color: grey;
     }
 
     /*scroll knap*/
