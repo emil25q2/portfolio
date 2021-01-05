@@ -143,7 +143,7 @@
 
 @media (max-width: 800px) {
     main {
-        background-image: url(images/stjernehimmel.svg);
+        background-image: url(images/tema_baggrund.svg);
         background-size: cover;
     }
 
@@ -152,9 +152,9 @@
     }
 
     /*scroll funktion*/
+    /*
     .image_container {
         display: flex;
-        /*        gap: 20px;*/
     }
 
     .image_container img_container {
@@ -175,13 +175,13 @@
     .img_container .text {
         display: none;
     }
-
+*/
     .image_container figcaption {
         padding: 10px;
         text-align: center;
         font-family: 'roboto';
         font-size: 1.3rem;
-        color: white;
+        color: black;
         text-transform: uppercase;
     }
 
@@ -192,13 +192,14 @@
 
     /*tekst*/
     h1 {
-        font-size: 4rem;
+        font-size: 6rem;
         font-family: 'BalboaPlus Primary';
         text-transform: uppercase;
         font-weight: normal;
         text-align: center;
         color: white;
         margin: 15px;
+        margin-bottom: 95px;
     }
 
     #section1 p {
@@ -206,7 +207,7 @@
         text-transform: capitalize;
         text-align: justify;
         font-family: 'roboto';
-        color: white;
+        color: black;
     }
 
     p {
@@ -216,11 +217,10 @@
         margin: 30px;
         margin-top: 0;
         margin-bottom: 15px;
-        color: white;
+        color: black;
     }
 
     #weblink {
-        color: white;
         margin-bottom: 15px;
         text-decoration: none;
         display: grid;
@@ -228,7 +228,7 @@
     }
 
     #section1 a {
-        color: white;
+        color: black;
         font-family: 'roboto';
         font-weight: normal;
         font-size: .9rem;

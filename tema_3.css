@@ -90,7 +90,6 @@
     /*scroll funktion*/
     .image_container {
         display: flex;
-        /*        gap: 20px;*/
     }
 
     .image_container img_container {
