@@ -22,7 +22,7 @@
     /*tekst*/
     h1 {
         color: black;
-        font-family: 'BalboaPlus Primary';
+        font-family: 'balboa-plus-primary', sans-serif;
         font-weight: normal;
         font-size: 5rem;
         margin-bottom: 0;
@@ -47,7 +47,7 @@
     }
 
     footer p {
-        margin-top: 12.5vw;
+        margin-top: 16.5vw;
     }
 
     #mig {
@@ -56,7 +56,7 @@
 
     #mig img {
         position: absolute;
-        top: -3vw;
+        top: -6vw;
         right: 13vw;
         margin-top: 2vw;
     }
@@ -64,7 +64,7 @@
     #text {
         display: grid;
         grid-template-columns: repeat(3, 500px);
-        grid-template-rows: repeat(2, 170px);
+        grid-template-rows: repeat(2, 130px);
     }
 
     /*cv knap*/
@@ -123,7 +123,7 @@
     /*tekst*/
     h1 {
         color: white;
-        font-family: 'BalboaPlus Primary';
+        font-family: 'balboa-plus-primary', sans-serif;
         font-weight: normal;
         font-size: 8rem;
         margin: 0;

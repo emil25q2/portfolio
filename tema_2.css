@@ -38,10 +38,10 @@
     /*tekst*/
     h1 {
         color: white;
-        font-family: 'BalboaPlus Primary';
+        font-family: 'balboa-plus-primary', sans-serif;
         font-weight: normal;
         font-size: 7rem;
-        margin-top: 6vw;
+        margin-top: 5vw;
         margin-left: 2vw;
         margin-bottom: 0;
     }
@@ -58,7 +58,7 @@
         margin: 0;
         margin-left: 2vw;
         margin-right: 6vw;
-        margin-top: -3vw;
+        margin-top: -2vw;
     }
 
     #section2 p {
@@ -102,7 +102,7 @@
         display: flex;
         /*        gap: 20px;*/
         position: relative;
-        top: -62vw;
+        top: -66vw;
     }
 
     .image_container img_container {
@@ -193,13 +193,14 @@
     /*tekst*/
     h1 {
         font-size: 6rem;
-        font-family: 'BalboaPlus Primary';
+        font-family: 'balboa-plus-primary', sans-serif;
         text-transform: uppercase;
         font-weight: normal;
         text-align: center;
         color: white;
         margin: 15px;
         margin-bottom: 95px;
+        margin-top: 0;
     }
 
     #section1 p {

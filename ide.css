@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+@media (min-width: 800px) {
+    body {
+        overflow: hidden;
+    }
+
+    main {
+        background-image: url(images/projekter_baggrund.svg);
+        background-size: cover;
+        /*        width: 98.5vw;*/
+        height: 57.25vw;
+    }
+
+}
