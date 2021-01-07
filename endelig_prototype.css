@@ -1,0 +1,5 @@
+* {
+    box-sizing: border-box;
+}
+
+@media (min-width: 800px) {}

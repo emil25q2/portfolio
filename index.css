@@ -13,7 +13,7 @@
         background: white;
         position: relative;
         margin-left: -1vw;
-        margin-top: -64vw;
+        margin-top: -69vw;
         display: grid;
     }
 
@@ -301,7 +301,7 @@
         background-image: url(images/astronaut.svg);
         width: 26vw;
         position: absolute;
-        top: -12vw;
+        top: -14vw;
         right: -10vw;
         height: 23vw;
     }
@@ -314,7 +314,7 @@
         background-image: url(images/saturn.svg);
         width: 21vw;
         position: absolute;
-        top: -30vw;
+        top: -34vw;
         left: 60.5vw;
         z-index: 2;
         height: 12vw;
@@ -358,7 +358,7 @@
         position: absolute;
         width: 10vw;
         height: 10vw;
-        top: -67vw;
+        top: -71vw;
         left: -13vw;
         z-index: 1;
     }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04.05.01 Individuelt spil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="individuelt_spil.css">
+    <link rel="stylesheet" href="https://use.typekit.net/bxy2eji.css">
+
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="topnav">
+            <section id="logo_container">
+                <a href="index.html" class="logo"><img id="logo" src="images/small_logo.svg" alt="logo" width="54.4" height="54.4"></a>
+            </section>
+
+            <div id="myLinks">
+                <a href="index.html">forside</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">projekter</button>
+                    <div class="dropdown-content">
+                        <a href="tema_2.html" target="blank">tema 02 - web</a>
+                        <a href="tema_3.html" target="blank">tema 03 - ux</a>
+                        <a href="tema_4.html" target="blank">tema 04 - animation</a>
+                        <a href="tema_5.html" target="blank">tema 05 - indhold</a>
+                    </div>
+                </div>
+
+                <a href="about.html">om mig</a>
+            </div>
+
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section1">
+            <h1>04.05.01</h1>
+            <h2>individuelt spil</h2>
+            <p>Vi var nu kommet til det sidste modul i dette tema, og vores endelig spil skulle afleveres. Her ser du et style tile med billeder og tekst, der blev brugt i spillet.</p>
+
+            <div id="weblink">
+                <a href="http://emiliedasilva.dk/kea/04_animation/spil/index.html" id="link" target="_blank">Spil spillet her</a>
+            </div>
+        </section>
+
+        <section id="section2">
+            <div class="image_container">
+                <div class="img_container">
+                    <video src="spil_video.mov" controls width="405" height="300"></video>
+                    <figcaption>gennemgang af spillet</figcaption>
+                    <p>Her kan du se en gennemgang af spillet, hvor du kan høre lydende, se elementerne og se, hvordan man vinder og hvordan man taber spillet. Hvis du selv vil prøve at spille spillet, kan du trykke på linket til venstre på siden.</p>
+                </div>
+
+                <div class="img_container">
+                    <img src="images/styletile.png" width="405" height="300" alt="">
+                    <figcaption>forbedringer</figcaption>
+                    <p>Hvis jeg skulle videreudvikle på dette spil, ville jeg starte med at ændre fonten til en lidt mere letlæselig font. Så ville jeg endvidere se nærmere på farverne, idet jeg ikke synes, at de valgte komplimenterer hinanden så godt, som det var ønsket. <br>Da jeg fik feedback på spillet genstartede lydende så snart man havde trykket på et nyt element, hvilket var forstyrrende, da lydende aldrig nåede at køre til ende. Jeg gik ind og fiksede det i min JavaScript kode vha. currentTime = 0;, lige efter feedback-samtalen.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="scroll_up">
+            <button class="scrollToTopBtn">↑</button>
+        </div>
+        <p>all rights reserved. Emilie da Silva 2021</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

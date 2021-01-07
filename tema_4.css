@@ -17,7 +17,6 @@
         position: relative;
         top: -62vw;
         left: 23vw;
-
     }
 
     #section2 {
@@ -107,6 +106,7 @@
         display: grid;
         grid-column: 1/2;
         margin-left: 2vw;
+        z-index: 1;
     }
 
     #section1 a {
@@ -127,7 +127,6 @@
         margin-top: -2.5vw;
         color: grey;
     }
-
 }
 
 
@@ -149,7 +148,7 @@
 
     main {
         background-image: url(images/tema_baggrund.svg);
-        background-size: cover;
+        background-size: contain;
     }
 
     h1 {
@@ -171,6 +170,7 @@
         margin: 1vw;
         font-size: 1.5rem;
         text-transform: uppercase;
+        margin-top: 6vw;
     }
 
     h3 {
@@ -197,7 +197,7 @@
         font-size: 4.5rem;
         text-transform: uppercase;
         margin-top: -24vw;
-        margin-bottom: 132px;
+        margin-bottom: 88px;
     }
 
     p {
@@ -211,7 +211,7 @@
         font-size: .9rem;
     }
 
-    a {
+    #weblink a {
         color: black;
         font-family: 'roboto';
         font-weight: normal;
