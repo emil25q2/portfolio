@@ -57,16 +57,6 @@
         padding-right: 0;
     }
 
-    /*
-    p {
-        font-size: .8rem;
-        text-transform: uppercase;
-        text-align: center;
-        font-family: 'roboto';
-        margin: 2vw;
-    }
-*/
-
     h1 {
         color: white;
         font-family: 'balboa-plus-primary', sans-serif;
@@ -116,7 +106,7 @@
         font-family: 'roboto';
         font-weight: normal;
         font-size: 1rem;
-        margin-top: -28vw;
+        margin-top: -24vw;
     }
 
 
@@ -128,6 +118,11 @@
         padding: 0;
         margin-top: -2.5vw;
         color: grey;
+    }
+
+    /*scroll knap*/
+    .scrollToTopBtn {
+        display: none;
     }
 }
 
@@ -149,6 +144,7 @@
         background-size: cover;
     }
 
+    main img,
     video {
         width: 100%;
     }

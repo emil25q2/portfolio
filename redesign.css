@@ -54,6 +54,15 @@
         left: -31vw;
     }
 
+    h3 {
+        font-family: 'roboto';
+        font-weight: normal;
+        font-size: 1.3rem;
+        color: white;
+        text-transform: uppercase;
+        margin: 10px;
+    }
+
     #dokumentation {
         top: 20vw;
         left: -64vw;
@@ -138,14 +147,6 @@
         margin-bottom: 15px;
     }
 
-    .image_container figcaption {
-        font-family: 'roboto';
-        font-size: 1.3rem;
-        color: white;
-        text-transform: uppercase;
-        margin: 10px;
-    }
-
     .image_container img {
         width: 90%;
         height: auto;
@@ -208,7 +209,8 @@
         margin-bottom: 88px;
     }
 
-    figcaption {
+/*
+    .image_container h3 {
         color: black;
         font-family: 'roboto';
         font-weight: normal;
@@ -218,13 +220,17 @@
         text-transform: uppercase;
         margin-top: 6vw;
     }
+*/
 
     h3 {
+        color: black;
         font-family: 'roboto';
         font-weight: normal;
         text-align: center;
-        font-size: 1.2rem;
         margin: 1vw;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin-top: 6vw;
     }
 
     #section1 p {

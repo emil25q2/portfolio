@@ -46,6 +46,14 @@
         margin-bottom: 0;
     }
 
+    h3 {
+        font-family: 'roboto';
+        font-size: 1.3rem;
+        font-weight: normal;
+        color: black;
+        text-transform: uppercase;
+    }
+
     #section1 p {
         font-size: 1rem;
         text-align: justify;
@@ -58,7 +66,7 @@
         margin: 0;
         margin-left: 2vw;
         margin-right: 6vw;
-        margin-top: -2vw;
+        margin-top: -4vw;
     }
 
     #section2 p {
@@ -121,13 +129,6 @@
         justify-items: center;
         display: grid;
     }
-
-    .image_container figcaption {
-        font-family: 'roboto';
-        font-size: 1.3rem;
-        color: black;
-        text-transform: uppercase;
-    }
 }
 
 
@@ -176,19 +177,6 @@
         display: none;
     }
 */
-    .image_container figcaption {
-        padding: 10px;
-        text-align: center;
-        font-family: 'roboto';
-        font-size: 1.3rem;
-        color: black;
-        text-transform: uppercase;
-    }
-
-    /*scroll knap*/
-    .scrollToTopBtn {
-        display: none;
-    }
 
     /*tekst*/
     h1 {
@@ -199,13 +187,23 @@
         text-align: center;
         color: white;
         margin: 15px;
-        margin-bottom: 95px;
+        margin-bottom: 57px;
         margin-top: 0;
+    }
+
+    h3 {
+        padding: 10px;
+        text-align: center;
+        font-weight: normal;
+        font-family: 'roboto';
+        font-size: 1.3rem;
+        color: black;
+        text-transform: uppercase;
+        margin: 0;
     }
 
     #section1 p {
         font-size: .9rem;
-        text-transform: capitalize;
         text-align: justify;
         font-family: 'roboto';
         color: black;

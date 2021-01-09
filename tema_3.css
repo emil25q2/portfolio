@@ -15,9 +15,8 @@
 
     #section1 img {
         position: relative;
-        top: -62vw;
+        top: -69vw;
         left: 23vw;
-
     }
 
     #section2 {
@@ -78,7 +77,19 @@
         margin: 0;
         margin-left: 2vw;
         margin-right: 0vw;
-        margin-top: -18vw;
+        margin-top: -20vw;
+    }
+
+    h2 {
+        position: relative;
+        top: -70vw;
+        left: 23vw;
+        margin: 0;
+        text-align: center;
+        font-family: 'roboto';
+        font-weight: normal;
+        font-size: 1.5rem;
+        text-transform: uppercase;
     }
 
     #weblink {
@@ -95,7 +106,7 @@
         font-family: 'roboto';
         font-weight: normal;
         font-size: 1rem;
-        margin-top: -26vw;
+        margin-top: -27vw;
     }
 
 
@@ -107,6 +118,11 @@
         padding: 0;
         margin-top: -2.5vw;
         color: grey;
+    }
+
+    /*scroll knap*/
+    .scrollToTopBtn {
+        display: none;
     }
 }
 
@@ -132,6 +148,10 @@
         background-size: cover;
     }
 
+    main img {
+        width: 100%;
+    }
+
     /*
     section {
         overflow: hidden;
@@ -146,7 +166,7 @@
         font-weight: normal;
         text-align: center;
         color: white;
-        margin-bottom: 95px;
+        margin-bottom: 104px;
         margin-top: 0;
     }
 
@@ -200,7 +220,7 @@
         display: grid;
     }
 
-    #section1 img {
+    #right {
         display: none;
     }
 }

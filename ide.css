@@ -127,8 +127,9 @@
         margin-bottom: 15px;
     }
 
-    .image_container figcaption {
+    h3 {
         font-family: 'roboto';
+        font-weight: normal;
         font-size: 1.3rem;
         color: white;
         text-transform: uppercase;
@@ -181,7 +182,7 @@
         margin-top: 0;
     }
 
-    figcaption {
+    .image_container h3 {
         color: black;
         font-family: 'roboto';
         font-weight: normal;

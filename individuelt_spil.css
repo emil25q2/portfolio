@@ -10,7 +10,6 @@
     main {
         background-image: url(images/projekter_baggrund.svg);
         background-size: cover;
-        /*        width: 98.5vw;*/
         height: 57.25vw;
     }
 
@@ -53,6 +52,15 @@
         left: -31vw;
     }
 
+    h3 {
+        font-family: 'roboto';
+        font-weight: normal;
+        font-size: 1.3rem;
+        color: white;
+        text-transform: uppercase;
+        margin: 10px;
+    }
+
     #section1 p {
         font-size: 1rem;
         text-align: justify;
@@ -81,11 +89,9 @@
     }
 
     #weblink {
-        /*        margin-bottom: 15px;*/
         text-decoration: none;
         grid-column: 1/2;
         margin-left: 2vw;
-        /*        margin-top: -3vw;*/
     }
 
     #section1 a {
@@ -107,28 +113,9 @@
         left: 24vw;
     }
 
-    /*
-    #weblink {
-        color: black;
-        text-decoration: none;
-        display: grid;
-        grid-column: 1/2;
-        margin-left: 2vw;
-        margin-top: -17vw;
-    }
-
-    #section1 a {
-        color: black;
-        font-family: 'roboto';
-        font-weight: normal;
-        font-size: 1rem;
-    }
-*/
-
     /*scroll funktion*/
     .image_container {
         display: flex;
-        /*        gap: 20px;*/
         position: relative;
         top: -37vw;
         right: 2vw;
@@ -155,14 +142,6 @@
         margin-bottom: 15px;
     }
 
-    .image_container figcaption {
-        font-family: 'roboto';
-        font-size: 1.3rem;
-        color: white;
-        text-transform: uppercase;
-        margin: 10px;
-    }
-
     .image_container img {
         width: 90%;
         height: auto;
@@ -171,5 +150,141 @@
     .image_container video {
         width: 90%;
         height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    #theme_bar {
+        display: none;
+    }
+
+    main {
+        background-image: url(images/tema_baggrund.svg);
+        background-size: cover;
+    }
+
+    main img,
+    video {
+        width: 100%;
+    }
+
+    /*tekst*/
+    h1 {
+        font-size: 6rem;
+        font-family: 'balboa-plus-primary', sans-serif;
+        text-transform: uppercase;
+        font-weight: normal;
+        text-align: center;
+        color: white;
+        margin-bottom: 53px;
+        margin-top: 0;
+    }
+
+    h2 {
+        color: white;
+        font-family: 'balboa-plus-primary', sans-serif;
+        font-weight: normal;
+        font-size: 3.1rem;
+        margin: 0;
+        text-align: center;
+        margin-top: -15vw;
+        margin-bottom: 28vw;
+    }
+
+    h3 {
+        color: black;
+        font-family: 'roboto';
+        font-weight: normal;
+        text-align: center;
+        margin: 1vw;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin-top: 6vw;
+    }
+
+    #assetliste {
+        color: white;
+        font-family: 'balboa-plus-primary', sans-serif;
+        font-weight: normal;
+        font-size: 2.7rem;
+        margin: 0;
+        text-align: center;
+        margin-top: -17vw;
+    }
+
+    #dokumentation {
+        color: white;
+        font-family: 'balboa-plus-primary', sans-serif;
+        font-weight: normal;
+        font-size: 2.3rem;
+        margin-top: -1vw;
+        text-align: center;
+        margin-bottom: 22vw;
+    }
+
+    h3 {
+        font-family: 'roboto';
+        font-weight: normal;
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 1vw;
+        text-transform: uppercase;
+    }
+
+    #section1 p {
+        font-size: .9rem;
+        font-family: 'roboto';
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-top: 0;
+        margin-bottom: 25px;
+        text-align: justify;
+        font-family: 'roboto';
+        font-size: .9rem;
+    }
+
+    #section1 a {
+        color: black;
+        font-family: 'roboto';
+        font-weight: normal;
+        font-size: .9rem;
+        margin-left: 30px;
+    }
+
+    #weblink {
+        margin-bottom: 15px;
+        text-decoration: none;
+        display: grid;
+    }
+
+    #weblink a {
+        color: black;
+        margin: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: justify;
+        font-family: 'roboto';
+        font-size: .9rem;
+    }
+
+    #section1 img {
+        display: none;
     }
 }

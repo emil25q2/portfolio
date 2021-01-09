@@ -43,6 +43,15 @@
         margin-bottom: 0;
     }
 
+    h3 {
+        font-family: 'roboto';
+        font-size: 1.3rem;
+        color: white;
+        text-transform: uppercase;
+        margin: 10px;
+    }
+
+
     #assetliste {
         color: black;
         font-family: 'balboa-plus-primary', sans-serif;
@@ -143,14 +152,6 @@
         margin-bottom: 15px;
     }
 
-    .image_container figcaption {
-        font-family: 'roboto';
-        font-size: 1.3rem;
-        color: white;
-        text-transform: uppercase;
-        margin: 10px;
-    }
-
     .image_container img {
         width: 90%;
         height: auto;
@@ -234,6 +235,7 @@
         text-align: center;
         font-size: 1.2rem;
         margin: 1vw;
+        text-transform: uppercase;
     }
 
     #section1 p {
@@ -265,6 +267,16 @@
         margin-bottom: 15px;
         text-decoration: none;
         display: grid;
+    }
+
+    #weblink a {
+        color: black;
+        margin: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: justify;
+        font-family: 'roboto';
+        font-size: .9rem;
     }
 
     #section1 img {

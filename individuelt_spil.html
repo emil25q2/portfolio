@@ -16,7 +16,7 @@
     <header>
         <nav class="topnav">
             <section id="logo_container">
-                <a href="index.html" class="logo"><img id="logo" src="images/small_logo.svg" alt="logo" width="54.4" height="54.4"></a>
+                <a href="index.html" class="logo"><img id="logo" src="images/small_logo.svg" alt="logo" width="54" height="54"></a>
             </section>
 
             <div id="myLinks">
@@ -47,7 +47,7 @@
         <section id="section1">
             <h1>04.05.01</h1>
             <h2>individuelt spil</h2>
-            <p>Vi var nu kommet til det sidste modul i dette tema, og vores endelig spil skulle afleveres. Her ser du et style tile med billeder og tekst, der blev brugt i spillet.</p>
+            <p>Vi var nu kommet til det sidste modul i dette tema, og vores endelig spil skulle afleveres. Her ser du et style tile med billeder og tekst, der blev brugt i spillet, et stilinspirationsbillede og en video af det endelige spil.</p>
 
             <div id="weblink">
                 <a href="http://emiliedasilva.dk/kea/04_animation/spil/index.html" id="link" target="_blank">Spil spillet her</a>
@@ -57,14 +57,26 @@
         <section id="section2">
             <div class="image_container">
                 <div class="img_container">
-                    <video src="spil_video.mov" controls width="405" height="300"></video>
-                    <figcaption>gennemgang af spillet</figcaption>
-                    <p>Her kan du se en gennemgang af spillet, hvor du kan høre lydende, se elementerne og se, hvordan man vinder og hvordan man taber spillet. Hvis du selv vil prøve at spille spillet, kan du trykke på linket til venstre på siden.</p>
+                    <img src="04.05.01/stilinspiration.png" width="405" height="300" alt="stilinspiration">
+                    <h3>stilinspiration</h3>
+                    <p>Da jeg havde fundet på konceptet for mit spil, søgte jeg inspiration til stilen på internettet. Her fandt jeg ud af, hvordan man kunne udføre et manga inspireret tema for spillet. Jeg så, at man ofte overproportionerer i denne stil, hvorfor min figur har store øjne, bryster og hofter ift. ansigt og andre kropsdele. Jeg faldt også for den blå og lyserøde farve, som jeg gerne ville inkorporere i mit eget design. Så jeg endte med at følge det klassike baggrundsdesign med den blå farve, og så brugte jeg den lyserøde farve til blæksprutten.</p>
                 </div>
 
                 <div class="img_container">
-                    <img src="images/styletile.png" width="405" height="300" alt="">
-                    <figcaption>forbedringer</figcaption>
+                    <img src="04.05.01/statemachine.png" alt="statemachinediagram" width="405" height="300">
+                    <h3>statemachinediagram</h3>
+                    <p>Et statemachinediagram minder meget om et aktivitetsdiagram, men det er til gengæld mere detaljeret. I dette diagram samles der flere aktiviteter i hver deres "states". Et program er i en "state/tilstand", når det udfører de samme ting igen og igen, indtil noget nyt sker. Statemachinediagrammer er også en del af UML standarden for OMG. Vi følger den dog ikke 100%, idet vi skriver flere detaljer ind. <br>Jeg var desværre nødt til at dele statemachinediagrammet op, da det blev for stort til et stykke papir. Statemachinediagrammet skulle være over kernen af spillet, så uden titelskærm, prøv-igen knapper.</p>
+                </div>
+
+                <div class="img_container">
+                    <video src="spil_video.mov" controls width="405" height="300"></video>
+                    <h3>gennemgang af spillet</h3>
+                    <p>Her kan du se en gennemgang af spillet, hvor du kan høre lydende, se elementerne og se, hvordan man vinder og hvordan man taber spillet. Hvis du selv vil prøve at spille spillet, kan du trykke på linket til venstre på siden. <br>Du starter med at se titelskærmen, der fører dig videre til introduktionsksærmen, når du trykker play, så starter spillet. Alt efter, om du vinder eller ej, vil du bliver ført videre til henholdsvis vinder- eller taber skærmen, hvor du begge steder har muligheden for at genstarte spillet og prøve at slå din rekordtid.</p>
+                </div>
+
+                <div class="img_container">
+                    <img src="04.05.01/styletile.png" width="405" height="300" alt="styltile">
+                    <h3>forbedringer</h3>
                     <p>Hvis jeg skulle videreudvikle på dette spil, ville jeg starte med at ændre fonten til en lidt mere letlæselig font. Så ville jeg endvidere se nærmere på farverne, idet jeg ikke synes, at de valgte komplimenterer hinanden så godt, som det var ønsket. <br>Da jeg fik feedback på spillet genstartede lydende så snart man havde trykket på et nyt element, hvilket var forstyrrende, da lydende aldrig nåede at køre til ende. Jeg gik ind og fiksede det i min JavaScript kode vha. currentTime = 0;, lige efter feedback-samtalen.</p>
                 </div>
             </div>

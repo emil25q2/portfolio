@@ -99,7 +99,7 @@
         margin-top: -20vw;
     }
 
-    #weblink {
+    .weblink {
         color: white;
         margin-bottom: 15px;
         text-decoration: none;
@@ -127,6 +127,11 @@
         margin-top: -2.5vw;
         color: grey;
     }
+
+    /*scroll knap*/
+    .scrollToTopBtn {
+        display: none;
+    }
 }
 
 
@@ -149,6 +154,11 @@
     main {
         background-image: url(images/tema_baggrund.svg);
         background-size: contain;
+    }
+
+    main img,
+    video {
+        width: 100%;
     }
 
     h1 {
@@ -200,7 +210,8 @@
         margin-bottom: 88px;
     }
 
-    p {
+    p,
+    ul {
         margin: 30px;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -211,7 +222,7 @@
         font-size: .9rem;
     }
 
-    #weblink a {
+    .weblink a {
         color: black;
         font-family: 'roboto';
         font-weight: normal;
@@ -219,7 +230,7 @@
         margin-left: 30px;
     }
 
-    #weblink {
+    .weblink {
         margin-bottom: 15px;
         text-decoration: none;
         display: grid;

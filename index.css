@@ -3,6 +3,9 @@
 }
 
 @media (min-width: 800px) {
+    html {
+        scroll-behavior: smooth;
+    }
 
     /*main*/
     #section1 {
@@ -157,12 +160,14 @@
     }
 
     /*sorte klatter*/
+    /*
     :root {
         --background: black;
         --primary: black;
         --secondary: black;
         --third: black;
     }
+*/
 
     * {
         box-sizing: border-box;
@@ -191,17 +196,17 @@
     @keyframes morph {
         0% {
             border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-            background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+            background: black;
         }
 
         50% {
             border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-            background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+            background: black;
         }
 
         100% {
             border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-            background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+            background: black;
         }
     }
 
@@ -237,17 +242,17 @@
     @keyframes morph {
         0% {
             border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-            background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+            background: black;
         }
 
         50% {
             border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-            background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+            background: black;
         }
 
         100% {
             border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-            background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+            background: black;
         }
     }
 
@@ -384,17 +389,17 @@
     @keyframes morph {
         0% {
             border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-            background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+            background: black;
         }
 
         50% {
             border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-            background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+            background: black;
         }
 
         100% {
             border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-            background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+            background: black;
         }
     }
 
@@ -434,17 +439,17 @@
     @keyframes morph {
         0% {
             border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-            background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+            background: black;
         }
 
         50% {
             border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-            background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+            background: black;
         }
 
         100% {
             border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-            background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+            background: black;
         }
     }
 
@@ -462,13 +467,17 @@
         z-index: 1;
     }
 
-    /*hide knapper*/
-    .previous {
-        display: none;
-    }
-
-    .next {
-        display: none;
+    /*scroll arrow*/
+    #scroll_down {
+        position: absolute;
+        bottom: 20px;
+        width: 30px;
+        height: 30px;
+        border-bottom: 2px solid #232323;
+        border-right: 2px solid #232323;
+        transform: translate(-50%, 0%) rotate(45deg);
+        left: 49%;
+        cursor: pointer;
     }
 
     .btn {
@@ -600,42 +609,6 @@
         display: none;
     }
 
-    /*frem og tilbage knapper*/
-    #frem_tilbage a {
-        text-decoration: none;
-        display: inline-block;
-        padding: 8px 16px;
-    }
-
-    .round:hover {
-        color: grey;
-        border: 2px solid grey;
-    }
-
-    .previous {
-        color: white;
-        border: 2px solid white;
-        top: 227vw;
-        left: 82vw;
-        top: 232vw;
-        left: 2vw;
-    }
-
-    .next {
-        color: white;
-        border: 2px solid white;
-        top: 227vw;
-        left: 82vw;
-        top: 232vw;
-        left: 88vw;
-    }
-
-    .round {
-        border-radius: 50%;
-        position: absolute;
-        z-index: 1;
-    }
-
     /*
     overlay .overlay {
         position: absolute;
@@ -672,6 +645,7 @@
         position: relative;
         width: 100%;
         height: 100%;
+        font-family: 'roboto';
     }
 
     .button_container .btn {
@@ -691,6 +665,7 @@
         text-transform: uppercase;
         border-radius: 4px;
         opacity: 0.9;
+        text-decoration: none;
     }
 
     .button_container .btn:hover {
@@ -731,6 +706,27 @@
     }
 
     100% {
-        transform: translatey(0px) rotate (5deg);
+        transform: translatey(0px) rotate(5deg);
     }
+}
+
+.fade_move_down {
+    animation: fade_move_down_kf 4s ease-in-out infinite;
+}
+
+@keyframes fade_move_down_kf {
+    0% {
+        transform: translate(0, -10px) rotate(45deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0, 10px) rotate(45deg);
+        opacity: 0;
+    }
+
 }
