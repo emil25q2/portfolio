@@ -46,6 +46,7 @@
     h3 {
         font-family: 'roboto';
         font-size: 1.3rem;
+        font-weight: normal;
         color: white;
         text-transform: uppercase;
         margin: 10px;
@@ -165,11 +166,6 @@
 
 
 
-
-
-
-
-
 @media (max-width: 800px) {
     #theme_bar {
         display: none;
@@ -179,12 +175,6 @@
         background-image: url(images/tema_baggrund.svg);
         background-size: cover;
     }
-
-    /*
-    section {
-        overflow: hidden;
-    }
-*/
 
     /*tekst*/
     h1 {
