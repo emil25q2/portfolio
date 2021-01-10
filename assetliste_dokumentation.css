@@ -38,9 +38,7 @@
         font-family: 'balboa-plus-primary', sans-serif;
         font-weight: normal;
         font-size: 7rem;
-        margin-top: 5vw;
-        margin-left: 2vw;
-        margin-bottom: 0;
+        margin: 5vw 0 0 2vw;
     }
 
     h3 {
@@ -69,12 +67,10 @@
         font-family: 'balboa-plus-primary', sans-serif;
         font-weight: normal;
         font-size: 2.77rem;
-        margin: 0;
-        margin-top: 0px;
+        margin: 1vw 0;
         position: relative;
         top: 18.5vw;
         left: -64vw;
-        margin-top: 1vw;
     }
 
     #section1 p {
@@ -84,12 +80,8 @@
         color: black;
         grid-column: 1/2;
         grid-row: 2/3;
-        padding: 20px;
-        padding-left: 0;
-        margin: 0;
-        margin-left: 2vw;
-        margin-right: 6vw;
-        margin-top: 6vw;
+        padding: 20px 20px 20px 0;
+        margin: 6vw 6vw 0 2vw;
     }
 
     #section2 p {
@@ -126,7 +118,6 @@
     /*scroll funktion*/
     .image_container {
         display: flex;
-        /*        gap: 20px;*/
         position: relative;
         top: -42vw;
         right: 2vw;
@@ -184,8 +175,7 @@
         font-weight: normal;
         text-align: center;
         color: white;
-        margin-bottom: 53px;
-        margin-top: 0;
+        margin: 0 0 53px;
     }
 
     figcaption {
@@ -204,9 +194,8 @@
         font-family: 'balboa-plus-primary', sans-serif;
         font-weight: normal;
         font-size: 2.7rem;
-        margin: 0;
+        margin: -17vw 0 0;
         text-align: center;
-        margin-top: -17vw;
     }
 
     #dokumentation {
@@ -214,9 +203,8 @@
         font-family: 'balboa-plus-primary', sans-serif;
         font-weight: normal;
         font-size: 2.3rem;
-        margin-top: -1vw;
+        margin: -1vw 0 22vw;
         text-align: center;
-        margin-bottom: 22vw;
     }
 
     h3 {
@@ -235,11 +223,7 @@
     }
 
     p {
-        margin: 30px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin-top: 0;
-        margin-bottom: 25px;
+        margin: 0 30px 25px 30px;
         text-align: justify;
         font-family: 'roboto';
         font-size: .9rem;

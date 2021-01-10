@@ -10,7 +10,6 @@
     main {
         background-image: url(images/projekter_baggrund.svg);
         background-size: cover;
-        /*        width: 98.5vw;*/
         height: 57.25vw;
     }
 
@@ -31,16 +30,13 @@
         display: none;
     }
 
-
     /*tekst*/
     h1 {
         color: black;
         font-family: 'balboa-plus-primary', sans-serif;
         font-weight: normal;
         font-size: 7rem;
-        margin-top: 5vw;
-        margin-left: 2vw;
-        margin-bottom: 0;
+        margin: 5vw 2vw;
     }
 
     h2 {
@@ -73,12 +69,8 @@
         font-size: 1rem;
         text-align: justify;
         font-family: 'roboto';
-        padding: 20px;
-        padding-left: 0;
-        margin: 0;
-        margin-left: 2vw;
-        margin-right: 6vw;
-        margin-top: 4vw;
+        padding: 20px 20px 20px 0;
+        margin: 3.5vw 6vw 0 2vw;
     }
 
     #section2 p {
@@ -91,6 +83,13 @@
         margin: 0;
         background-color: white;
         opacity: .9;
+    }
+
+    #weblink a {
+        color: white;
+        font-family: 'roboto';
+        font-weight: normal;
+        font-size: 1rem;
     }
 
     footer p {
@@ -120,9 +119,8 @@
     /*scroll funktion*/
     .image_container {
         display: flex;
-        /*        gap: 20px;*/
         position: relative;
-        top: -49vw;
+        top: -53vw;
         right: 2vw;
         gap: 72px;
     }
@@ -166,10 +164,6 @@
 
 
 
-
-
-
-
 @media (max-width: 800px) {
     #theme_bar {
         display: none;
@@ -180,12 +174,6 @@
         background-size: cover;
     }
 
-    /*
-    section {
-        overflow: hidden;
-    }
-*/
-
     /*tekst*/
     h1 {
         font-size: 6rem;
@@ -194,8 +182,7 @@
         font-weight: normal;
         text-align: center;
         color: white;
-        margin-bottom: 90px;
-        margin-top: 0;
+        margin: 0 0 90px;
     }
 
     h2 {
@@ -205,32 +192,17 @@
         text-align: center;
         font-size: 2.6rem;
         text-transform: uppercase;
-        margin-top: -24vw;
-        margin-bottom: 88px;
+        margin: -24vw 0 22vw;
     }
-
-/*
-    .image_container h3 {
-        color: black;
-        font-family: 'roboto';
-        font-weight: normal;
-        text-align: center;
-        margin: 1vw;
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        margin-top: 6vw;
-    }
-*/
 
     h3 {
         color: black;
         font-family: 'roboto';
         font-weight: normal;
         text-align: center;
-        margin: 1vw;
         font-size: 1.5rem;
         text-transform: uppercase;
-        margin-top: 6vw;
+        margin: 6vw 1vw 1vw;
     }
 
     #section1 p {
@@ -264,7 +236,20 @@
         display: grid;
     }
 
+    #weblink a {
+        color: black;
+        font-family: 'roboto';
+        font-weight: normal;
+        font-size: .9rem;
+        margin-left: 30px;
+    }
+
     #section1 img {
         display: none;
+    }
+
+    main img,
+    video {
+        width: 100%;
     }
 }

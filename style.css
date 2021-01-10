@@ -47,11 +47,6 @@
          text-decoration: none;
      }
 
-     /*
-    nav a:first-child {
-        display: inline;
-    }*/
-
      /*scroll up knap*/
      .scrollToTopBtn {
          background-color: black;
@@ -63,17 +58,16 @@
          line-height: 48px;
          width: 48px;
 
-         /* place it at the bottom right corner */
          position: fixed;
          bottom: 30px;
          right: 30px;
-         /* keep it at the top of everything else */
+
          z-index: 100;
-         /* hide with opacity */
+
          opacity: 0;
-         /* also add a translate effect */
+
          transform: translateY(100px);
-         /* and a transition */
+
          transition: all .5s ease
      }
 
@@ -118,7 +112,6 @@
      .dropdown-content a:hover {
          background-color: #f1f1f1;
          color: black;
-         /*        margin: 0;*/
      }
 
      .dropdown:hover .dropdown-content {
@@ -240,13 +233,6 @@
      }
 
      .dropdown-content {
-         /*
-        position: absolute;
-        background-color: white;
-        min-width: 200px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-*/
          display: none;
          background-color: white;
          padding-left: 26.5vw;
@@ -263,11 +249,6 @@
      }
 
      .dropdown-content a:hover {
-         /*
-        background-color: #f1f1f1;
-        color: black;
-*/
-
          border-bottom: solid gray 3px;
      }
 
@@ -276,10 +257,6 @@
      }
 
      .dropdown:hover .dropbtn {
-         /*
-        color: grey;
-        border-bottom: solid grey 3px;
-*/
          padding-left: 37vw;
      }
 
@@ -294,17 +271,16 @@
          line-height: 48px;
          width: 48px;
 
-         /* place it at the bottom right corner */
          position: fixed;
          bottom: 30px;
          right: 30px;
-         /* keep it at the top of everything else */
+
          z-index: 100;
-         /* hide with opacity */
+
          opacity: 0;
-         /* also add a translate effect */
+
          transform: translateY(100px);
-         /* and a transition */
+
          transition: all .5s ease
      }
 

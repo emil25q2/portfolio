@@ -26,10 +26,7 @@
     main {
         background-image: url(images/space_blob.svg);
         background-size: cover;
-
-        /*width: 100vw;*/
         height: 57.25vw;
-
         margin-left: -1vw;
     }
 
@@ -53,26 +50,13 @@
         padding-right: 0;
     }
 
-    /*
-    p {
-        font-size: .8rem;
-        text-transform: uppercase;
-        text-align: center;
-        font-family: 'roboto';
-        margin: 2vw;
-    }
-*/
-
     /*tekst*/
     h1 {
         color: white;
         font-family: 'balboa-plus-primary', sans-serif;
         font-weight: normal;
         font-size: 7rem;
-        margin-top: 6vw;
-        margin-left: 2vw;
-        margin-bottom: 0;
-        margin-top: -1vw;
+        margin: -1vw 2vw;
     }
 
     h2 {
@@ -139,13 +123,6 @@
 
 
 
-
-
-
-
-
-
-
 @media (max-width: 800px) {
     #theme_bar {
         display: none;
@@ -168,8 +145,7 @@
         font-weight: normal;
         text-align: center;
         color: white;
-        margin-bottom: 95px;
-        margin-top: 0;
+        margin: 0 0 95px;
     }
 
     h2 {
@@ -177,10 +153,9 @@
         font-family: 'roboto';
         font-weight: normal;
         text-align: center;
-        margin: 1vw;
         font-size: 1.5rem;
         text-transform: uppercase;
-        margin-top: 6vw;
+        margin: 6vw 1vw 1vw;
     }
 
     h3 {
@@ -202,21 +177,14 @@
         font-family: 'balboa-plus-primary', sans-serif;
         font-weight: normal;
         text-align: center;
-        margin: 1vw;
-        margin-top: 1vw;
         font-size: 4.5rem;
         text-transform: uppercase;
-        margin-top: -24vw;
-        margin-bottom: 88px;
+        margin: -24vw 1vw 21vw 1vw;
     }
 
     p,
     ul {
-        margin: 30px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin-top: 0;
-        margin-bottom: 25px;
+        margin: 0 30px 25px 30px;
         text-align: justify;
         font-family: 'roboto';
         font-size: .9rem;
@@ -245,20 +213,4 @@
         margin-right: 30px;
         text-align: justify;
     }
-
-    /*
-    p {
-        font-size: .7rem;
-        text-transform: uppercase;
-        text-align: center;
-        font-family: 'roboto';
-    }
-*/
-
-    /*scroll knap*/
-    /*
-    .scrollToTopBtn {
-        display: none;
-    }
-*/
 }

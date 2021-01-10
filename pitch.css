@@ -10,7 +10,6 @@
     main {
         background-image: url(images/projekter_baggrund.svg);
         background-size: cover;
-        /*        width: 98.5vw;*/
         height: 57.25vw;
     }
 
@@ -31,18 +30,14 @@
         display: none;
     }
 
-
     /*tekst*/
     h1 {
         color: black;
         font-family: 'balboa-plus-primary', sans-serif;
         font-weight: normal;
         font-size: 7rem;
-        margin-top: 5vw;
-        margin-left: 2vw;
-        margin-bottom: 0;
+        margin: 5vw 0 0 2vw;
     }
-
 
     h3 {
         font-family: 'roboto';
@@ -60,12 +55,8 @@
         color: black;
         grid-column: 1/2;
         grid-row: 2/3;
-        padding: 20px;
-        padding-left: 0;
-        margin: 0;
-        margin-left: 2vw;
-        margin-right: 6vw;
-        margin-top: -2vw;
+        padding: 20px 20px 20px 0;
+        margin: -2vw 6vw 0 2vw;
     }
 
     #section2 p {
@@ -90,28 +81,9 @@
         color: grey;
     }
 
-    /*
-    #weblink {
-        color: black;
-        text-decoration: none;
-        display: grid;
-        grid-column: 1/2;
-        margin-left: 2vw;
-        margin-top: -17vw;
-    }
-
-    #section1 a {
-        color: black;
-        font-family: 'roboto';
-        font-weight: normal;
-        font-size: 1rem;
-    }
-*/
-
     /*scroll funktion*/
     .image_container {
         display: flex;
-        /*        gap: 20px;*/
         position: relative;
         top: -66vw;
         right: 2vw;
@@ -150,12 +122,6 @@
 
 
 
-
-
-
-
-
-
 @media (max-width: 800px) {
     #theme_bar {
         display: none;
@@ -166,12 +132,6 @@
         background-size: cover;
     }
 
-    /*
-    section {
-        overflow: hidden;
-    }
-*/
-
     /*tekst*/
     h1 {
         font-size: 6rem;
@@ -180,8 +140,7 @@
         font-weight: normal;
         text-align: center;
         color: white;
-        margin-bottom: 53px;
-        margin-top: 0;
+        margin: 0 0 53px;
     }
 
     .image_container h3 {
@@ -189,10 +148,9 @@
         font-family: 'roboto';
         font-weight: normal;
         text-align: center;
-        margin: 1vw;
+        margin: 6vw 1vw 1vw;
         font-size: 1.5rem;
         text-transform: uppercase;
-        margin-top: 6vw;
     }
 
     h3 {
@@ -210,11 +168,7 @@
     }
 
     p {
-        margin: 30px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin-top: 0;
-        margin-bottom: 25px;
+        margin: 0 30px 25px;
         text-align: justify;
         font-family: 'roboto';
         font-size: .9rem;

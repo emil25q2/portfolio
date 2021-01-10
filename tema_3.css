@@ -26,10 +26,7 @@
     main {
         background-image: url(images/space_blob.svg);
         background-size: cover;
-
-        /*width: 100vw;*/
         height: 57.25vw;
-
         margin-left: -1vw;
     }
 
@@ -59,10 +56,7 @@
         font-family: 'balboa-plus-primary', sans-serif;
         font-weight: normal;
         font-size: 7rem;
-        margin-top: 6vw;
-        margin-left: 2vw;
-        margin-bottom: 0;
-        margin-top: -1vw;
+        margin: -1vw 0 0 2vw;
     }
 
     #section1 p {
@@ -74,10 +68,7 @@
         grid-row: 2/3;
         padding: 20px;
         padding-left: 0;
-        margin: 0;
-        margin-left: 2vw;
-        margin-right: 0vw;
-        margin-top: -20vw;
+        margin: -20vw 0 0 2vw;
     }
 
     h2 {
@@ -130,14 +121,6 @@
 
 
 
-
-
-
-
-
-
-
-
 @media (max-width: 800px) {
     #theme_bar {
         display: none;
@@ -152,12 +135,6 @@
         width: 100%;
     }
 
-    /*
-    section {
-        overflow: hidden;
-    }
-*/
-
     /*tekst*/
     h1 {
         font-size: 6rem;
@@ -166,8 +143,7 @@
         font-weight: normal;
         text-align: center;
         color: white;
-        margin-bottom: 104px;
-        margin-top: 0;
+        margin: 0 0 104px;
     }
 
     h2 {
@@ -175,10 +151,9 @@
         font-family: 'roboto';
         font-weight: normal;
         text-align: center;
-        margin: 1vw;
+        margin: 6vw 1vw 1vw;
         font-size: 1.5rem;
         text-transform: uppercase;
-        margin-top: 6vw;
     }
 
     h3 {
@@ -196,11 +171,7 @@
     }
 
     p {
-        margin: 30px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin-top: 0;
-        margin-bottom: 25px;
+        margin: 0 30px 25px 30px;
         text-align: justify;
         font-family: 'roboto';
         font-size: .9rem;
