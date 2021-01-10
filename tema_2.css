@@ -116,6 +116,29 @@
         justify-items: center;
         display: grid;
     }
+
+    /*slide knapper*/
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: #232323;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
 }
 
 
@@ -181,5 +204,30 @@
         font-weight: normal;
         font-size: .9rem;
         margin-left: 30px;
+    }
+
+    .prev,
+    .next {
+        display: none;
+    }
+}
+
+
+
+/*animation*/
+.fade_out {
+    animation-name: fade_out_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes fade_out_kf {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
     }
 }

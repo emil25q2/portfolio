@@ -107,7 +107,7 @@
         <section id="section2">
             <h3>projekter</h3>
 
-            <div class="image_container">
+            <div class="image_container" id="slideshow_container">
                 <div class="img_container">
                     <div class="button_container">
                         <a href="tema_2.html">
@@ -167,6 +167,16 @@
                         </div>
                     </a>
                 </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
             </div>
         </section>
     </main>
