@@ -4,9 +4,6 @@ function sidenVises() {
     console.log("sidenVises");
 }
 
-document.querySelector(".prev").classList.add('fade_out');
-document.querySelector(".next").classList.add('fade_out');
-
 //scroll up button
 // We select the element we want to target
 var target = document.querySelector("footer");
@@ -55,11 +52,11 @@ function myFunction(x) {
     }
 }
 
-$(function () {
-    $('a[href*=#]').on('click', function (e) {
+(function () {
+    ('a[href*=#]').on('click', function (e) {
         e.preventDefault();
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top
+        ('html, body').animate({
+            scrollTop: ((this).attr('href')).offset().top
         }, 500, 'linear');
     });
 });

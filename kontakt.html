@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex" />
 
-    <title>05.01.01 pilotprojekt</title>
+    <title>Kontakt</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="pilotprojekt.css">
+    <link rel="stylesheet" href="kontakt.css">
     <link rel="stylesheet" href="https://use.typekit.net/bxy2eji.css">
 
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
@@ -47,44 +47,40 @@
     </header>
 
     <main>
-        <section id="section1">
-            <h1>05.01.01</h1>
-            <h2>pilotvideo</h2>
+        <h1>kontakt</h1>
+        <p>Kontakt mig på emiliedasilva1996@gmail.com eller udfyld nedenstående blanket.</p>
 
-            <p>I denne opgave skulle vi to og to lave et interview og derefter klippe materialet sammen til en film på 1 minut. Filmen skulle handle om en person med en passion. Så skulle filmen indeholde b-rolls, hvor hovedpersonen foretager en handling, og den skulle starte med et establishment shot, samt en titel. Derudover skulle filmen indeholde min. 5 klip med min. 3 forskellige framings.</p>
-        </section>
-
-        <section id="section2">
-            <div class="image_container">
-                <div class="img_container">
-                    <video src="pilot_video.mp4" controls width="405" height="228"></video>
-
-                    <h3>videoen</h3>
-                    <p>Her er det muligt at se videoen, hvor det er Andreas Klinge, der fortæller om sin passion for ski. Det kan ses, at vi har opnået kravene om 1 minuts længde, b-rolls, establishment shot osv.
-                    </p>
-                </div>
-
-                <div class="img_container">
-                    <img src="images/mobil_video.jpg" alt="stillbillede_video" width="405" height="228">
-                    <h3>problematikker og forbedringer</h3>
-                    <p>Der var ikke mange problemer under optagelserne, men til gengæld havde vi glemt en ordenlig mikrofon, og så kan man nemt se, at der var blevet brugt et telefonkamera i starten af videoen. Hvis vi kunne filme om, så ville vi sørge for at have nogle gode mikrofoner og kamera, så kvaliteten havde været i top.
-                    </p>
-                </div>
-
-                <div id="scroll"></div>
+        <!--form html-->
+        <form name="kontakt" netlify>
+            <div class="form-group">
+                <label>
+                    <input id="name" name="name" type="text" placeholder="NAME" required>
+                </label>
             </div>
-        </section>
+
+            <div class="form-group">
+                <label>
+                    <input id="email" placeholder="EMAIL" name="email" type="email" required>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <textarea id="message" name="message" placeholder="MESSAGE" rows="8" required></textarea>
+            </div>
+
+            <button id="send_message">Send besked</button>
+        </form>
     </main>
 
     <footer>
         <div class="scroll_up">
             <button class="scrollToTopBtn">↑</button>
         </div>
+
         <p>all rights reserved. Emilie da Silva 2021</p>
     </footer>
 
     <script src="script.js"></script>
-    <script src="pilotprojekt.js"></script>
 </body>
 
 </html>

@@ -22,7 +22,7 @@
 
     #section1 img {
         position: relative;
-        top: -62vw;
+        top: -57.5vw;
         left: 23vw;
     }
 
@@ -80,7 +80,7 @@
         color: white;
         grid-row: 2/3;
         padding: 20px 20px 20px 0;
-        margin: -20vw 0 0 2vw;
+        margin: -18vw 0 0 2vw;
     }
 
     #weblink {
@@ -97,7 +97,7 @@
         font-family: 'roboto';
         font-weight: normal;
         font-size: 1rem;
-        margin-top: -24vw;
+        margin-top: -20vw;
     }
 
 
