@@ -580,6 +580,22 @@
     .dot:hover {
         background-color: black;
     }
+
+    /*prikker*/
+    .prikker {
+        text-align: center;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 10px;
+        width: 10px;
+        margin: 0 2px;
+        background-color: #808080r;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
 }
 
 

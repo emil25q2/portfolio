@@ -93,5 +93,6 @@ textarea {
 @media (max-width: 800px) {
     body {
         background-image: url(images/stjernehimmel.svg);
+        overflow: visible;
     }
 }
