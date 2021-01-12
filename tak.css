@@ -1,0 +1,36 @@
+body {
+    background-image: url(images/stjernehimmel.svg);
+    background-size: cover;
+    height: 56.25vw;
+    overflow: hidden;
+}
+
+#text {
+    padding: 6vw 10vw;
+    margin: 13vw;
+}
+
+main h1 {
+    font-family: 'balboa-plus-primary', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 5rem;
+    margin: 0 0 7vw;
+    color: white;
+}
+
+main p {
+    font-family: 'roboto';
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
+footer p {
+    margin: -3vw;
+}
+
+/*scroll knap*/
+.scrollToTopBtn {
+    display: none;
+}
